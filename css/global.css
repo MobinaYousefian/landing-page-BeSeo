@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'Archivo';
+    src: url(../fonts/Archivo-Bold.eot);
+    src: url(../fonts/Archivo-Bold.eot) format('embedded-opentype'),
+         url(../fonts/Archivo-Bold.woff2) format('woff2'),
+         url(../fonts/Archivo-Bold.woff) format('woff'),
+         url(../fonts/Archivo-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url(../fonts/Archivo-Light.ttf) format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Archivo';
+    src: url(../fonts/Archivo-Regular.eot);
+    src: url(../fonts/Archivo-Regular.eot) format('embedded-opentype'),
+         url(../fonts/Archivo-Regular.woff2) format('woff2'),
+         url(../fonts/Archivo-Regular.woff) format('woff'),
+         url(../fonts/Archivo-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url(../fonts/Archivo-SemiBold.eot);
+    src: url(../fonts/Archivo-SemiBold.eot) format('embedded-opentype'),
+         url(../fonts/Archivo-SemiBold.woff2) format('woff2'),
+         url(../fonts/Archivo-SemiBold.woff) format('woff'),
+         url(../fonts/Archivo-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Archivo';
+    src: url(../fonts/Archivo-Medium.eot);
+    src: url(../fonts/Archivo-Medium.eot) format('embedded-opentype'),
+         url(../fonts/Archivo-Medium.woff2) format('woff2'),
+         url(../fonts/Archivo-Medium.woff) format('woff'),
+         url(../fonts/Archivo-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 10px;
+  font-family: 'Archivo',Helvetica, Arial,  sans-serif ;
+}
+:root {  
+    --color-gray-100: #f8f9fc;
+    --color-gray-200: #f1f3f9;
+    --color-gray-300: #dee3ed;
+    --color-gray-400: #c2c9d6;
+    --color-gray-500: #8f96a3;
+    --color-gray-600: #5e636e;
+    --color-gray-700: #2f3237;
+    --color-gray-800: #1d1e20;
+    --color-gray-900: #111213;
+    --color-text-white-main:  #fff ;
+    --color-text-white-light: #e1e1ff;
+    --color-text-black-main:  #222228;
+    --color-text-black-light: #3E3E3E;
+    --color-text-black-lighter:  #626262;
+    --color-text-black-very-light: #EBEBEB;
+    --color-yellow-main: #fca80f;
+    --color-yellow-light-background  :#FFF4E0;
+    --color-purple-very-dark-background: #372b7d;
+    --color-purple-darker-background:  #5047a0;
+    --color-purple-dark-background: #41348e;
+    --color-purple-dark-title: #473288;
+    --color-purple-main:   #7b66ef;
+    --color-purple-light:  #bfb9f3;
+    --color-purple-hover:#7561E3;
+    --color-purple-lighter-background:  #c5c4fc;
+    --color-purple-header-background: #1f1945;
+    --box-shadow:0px 10px 30px rgba(55,43,125,.1);
+    --box-shadow-dark:0px 10px 30px rgba(55,43,125,.2);
+    --font-weight-bold: 700;
+    --font-weight-semibold: 600;
+    --font-weight-regular: 500;
+    --font-weight-normal: 400;
+    --font-weight-light: 300;
+
+}
