@@ -1,1 +1,228 @@
+.ourwork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 32px 40px 32px;
+    background: url("../images/seo3-sectionbg4.png") no-repeat center;
+}
 
+.ourwork__text {
+    max-width: 448px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px 0 0;
+}
+
+.ourwork__badge {
+    background-color: var(--color-yellow-light-background);
+    color: var(--color-yellow-main);
+    border-radius: 15px;
+    width: 104px;
+    text-align: center;
+    padding: 4px 12px;
+}
+
+.ourwork__badge h6 {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.ourwork__title {
+    color: var(--color-purple-dark-title);
+    margin-top: 30px;
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.ourwork__description {
+    font-size: 1.3rem;
+    margin-top: 30px;
+    line-height: 19px;
+    color: var(--color-text-black-main);
+}
+
+.ourwork__benefits {
+    margin-top: 34px;
+}
+
+.ourwork__benefits h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-purple-dark-title);
+    padding: 0 16px 0 20px;
+}
+
+.ourwork__benefits img {
+    width: 56px;
+    height: 56px;
+}
+
+.benefits__container {
+    display: flex;
+    align-items: center;
+    padding: 6px 0;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: var(--color-purple-main);
+    color: var(--color-text-white-main);
+    width: 120px;
+    border-radius: 50px;
+    padding: 12px 34px;
+    font-size: 1.3rem;
+}
+
+.ourwork__img {
+    width: 100%;
+}
+
+.ourwork__img img {
+    background-color: #8f96a3;
+    max-width: 480px;
+    max-height: 480px;
+    width: 100%;
+}
+
+.Ourclients {
+    width: 100%;
+    padding: 110px 0 0 0;
+    text-align: center;
+    background: url("../images/seo3-sectionbg5.png") no-repeat center;
+}
+
+.Ourclients h2 {
+    color: var(--color-purple-dark-title);
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.Ourclients__container {
+    background-color: papayawhip;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.Ourclients__logos {
+    background-color: paleturquoise;
+    width: 100%;
+    max-width: 425px;
+    margin: 40px 0 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Ourclients__logos li {
+    width: 40%;
+    background-color: rgba(0, 0, 0, .01);
+    list-style: none;
+    margin: 10px;
+    padding: 10px 16px;
+}
+
+.Ourclients__logos img {
+    min-width: 76px;
+    width: 100%;
+}
+
+@media (min-width: 425px) {
+    .ourwork__title,
+    .Ourclients h2 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .ourwork {
+        width: 100%;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: lavender;
+    }
+
+    .ourwork__container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: papayawhip;
+        max-width: 712px;
+        width: 100%;
+    }
+
+    .ourwork__text {
+        background-color: paleturquoise;
+        width: 50%;
+        padding: 0 48px 0 0;
+    }
+
+    .ourwork__title,
+    .Ourclients h2 {
+        font-size: 4.6rem;
+    }
+
+    .btn__container {
+        margin: 28px 0 0 0;
+    }
+
+    .ourwork__img {
+        width: 50%
+    }
+
+    .Ourclients__container {
+        padding: 0 30px;
+    }
+
+    .Ourclients__logos {
+        max-width: unset;
+    }
+
+    .Ourclients__logos li {
+        width: min-content;
+    }
+
+    .Ourclients__logos img {
+        min-width: 88px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .ourwork__title,
+    .Ourclients h2 {
+        font-size: 5.4rem;
+    }
+
+    .ourwork__description,
+    .btn {
+        font-size: 1.6rem;
+    }
+
+    .ourwork__benefits h5 {
+        font-size: 1.8rem;
+    }
+
+    .ourwork__container {
+        max-width: unset;
+    }
+
+    .btn {
+        width: 134px;
+    }
+
+    .ourwork__img {
+        max-width: 100%;
+        max-height: unset;
+    }
+
+    .Ourclients__logos img {
+        min-width: 134px;
+    }
+}
