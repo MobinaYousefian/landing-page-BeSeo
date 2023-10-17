@@ -8,7 +8,6 @@ header {
     height: 60px;
     position: fixed;
     background-color: var(--color-text-white-main);
-    opacity: 0.96;
 }
 
 .header__navbar {
