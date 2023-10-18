@@ -5,7 +5,7 @@
 .newsletter {
     background: url("../images/seo3-sectionbg6.jpg") no-repeat center;
     padding: 300px 0 0 0;
-    height: max-content;
+    height: auto;
 }
 
 .newsletter__container {
@@ -82,15 +82,20 @@ footer {
     background-color: var(--color-purple-very-dark-background);
 }
 
+.contact__container {
+    width: 100%;
+    padding: 80px 33px 65px 33px;
+}
+
 .footer__contact {
-    padding: 110px 32px 64px 32px;
     max-width: 480px;
     width: 100%;
     margin: 0 auto;
 }
 
 .footer__address {
-    padding: 16px 0;
+    width: 100%;
+    margin-top: 30px;
 }
 
 .footer__address span,
@@ -102,49 +107,55 @@ footer {
     line-height: 19px;
 }
 
+.address__container,
+.social__container,
+.number__container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0;
+}
+
+.address__container {margin-bottom: 15px}
+
+.social__container {align-items: center}
+
 .footer__social {
-    margin: 30px 0 0 0;
-    padding: 16px 0;
+    width: 100%;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
 }
 
-.footer__social__container,
-.footer__number__container,
-.footer__address__container {
-    background-color: darkslategrey;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer__social__icon{
+.social__icon {
     color: var(--color-text-white-main);
     font-size: 2rem;
-    margin-top: 16px;
+    margin-top: 15px;
 }
 
-.footer__social__icon i {
+.social__icon i {
     padding: 0 6px;
 }
 
-.footer__social__icon a:hover {
+.social__icon a:hover {
     color: var(--color-yellow-main);
 }
 
 .footer__number {
-    margin: 30px 0 0 0;
-    padding: 16px 0;
+    width: 100%;
+    margin-top: 30px;
     display: flex;
     justify-content: flex-end;
 }
 
-.number__container {
+.number {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-bottom: 16px;
+}
+
+.--number-top {
+    margin-bottom: 15px;
 }
 
 .footer__number i{
@@ -153,17 +164,21 @@ footer {
     margin-right: 8px;
 }
 
-.footer__copyright{
-    padding: 30px 32px;
+.footer__copyright {
+    padding: 30px 33px;
     border-top: 1px solid rgba(255,255,255,0.1);
-    display: flex;
-    justify-content: center;
+    width: 100%;
 }
 
 .copyright__container {
     text-align: center;
     max-width: 480px;
     width: 100%;
+    margin: 0 auto;
+}
+
+.scroll-top {
+    display: block;
 }
 
 .scroll-top i {
@@ -172,7 +187,7 @@ footer {
 }
 
 .copyright__text{
-    padding: 24px 0 0 0;
+    padding-top: 24px;
 }
 
 .copyright__text a:hover {
@@ -187,21 +202,71 @@ footer {
     .footer__address span,
     .footer__social span,
     .footer__number h5 {
-        font-size: 1.4rem;
+        font-size: 14px;
+        line-height: 24px;
     }
 }
+
 
 @media (min-width: 768px) {
     .newsletter__container {
         padding: 0 30px;
     }
 
+    .newsletter__form {
+        max-width: 60%;
+    }
+
     .btn__container{
         margin-bottom: 40px;
     }
 
+    .contact__container {
+        padding: 80px 0 65px 0;
+    }
 
+    .footer__contact {
+        max-width: 80%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer__address,
+    .footer__social,
+    .footer__number {
+        width: 33%;
+    }
+
+    .address__container {margin: unset}
+
+    .footer__number i {
+        font-size: 1.5rem;
+    }
+
+    .footer__copyright {
+        padding: 30px 0;
+    }
+
+    .copyright__container {
+        max-width: 80%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .scroll-top {
+        padding-right: 15px;
+    }
+
+    .copyright__text{
+        font-size: 1.4rem;
+        line-height: 24px;
+        padding: unset;
+    }
 }
+
 
 @media (min-width: 1024px) {
     .newsletter__container{
@@ -219,15 +284,26 @@ footer {
     }
 
     .newsletter__form {
-        max-width: 546px;
+        max-width: 545px;
     }
 
     .btn {
         font-size: 1.6rem;
     }
 
-    footer {
-        padding-top: 70px;
+    .footer__address span,
+    .footer__social span,
+    .copyright__text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .social__icon {font-size: 2.2rem}
+
+    .footer__number h5,
+    .footer__number i {
+        font-size: 1.8rem;
+        line-height: 28px;
     }
 }
 
@@ -238,5 +314,10 @@ footer {
 
     .newsletter__form {
         max-width: 615px;
+    }
+
+    .footer__contact,
+    .copyright__container {
+        max-width: 72%;
     }
 }
