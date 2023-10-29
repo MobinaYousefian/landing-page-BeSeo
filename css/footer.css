@@ -315,6 +315,11 @@ footer {
 }
 
 @media (min-width: 1440px) {
+    .newsletter {
+        background-size: cover;
+        background-position: center top;
+    }
+
     .newsletter__container{
         padding: 0 190px;
     }
