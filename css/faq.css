@@ -99,6 +99,44 @@
     padding: 0 20px 20px 70px;
 }
 
+.faq__description {
+    margin: 0 auto;
+    max-width: 480px;
+    width: 100%;
+    padding: 40px 40px 0;
+    background-color: var(--color-purple-very-dark-background);
+    border-radius: 25px;
+    box-shadow: var(--box-shadow-dark);
+    z-index: 1;
+}
+
+.description__status {
+    padding-bottom: 20px;
+}
+
+.description__number {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.description__status h4,
+.description__text {
+    margin-bottom: 15px;
+}
+
+.description__status h4 {
+    color: var(--color-text-white-main);
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.description__text {
+    color: var(--color-text-white-light);
+    font-size: 1.3rem;
+    line-height: 19px;
+    padding-right: 8%;
+}
 
 
 @media (min-width: 425px) {
@@ -143,11 +181,34 @@
         font-size: 1.4rem;
         line-height: 24px;
     }
+
+    .faq__description {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 708px;
+    }
+
+    .description__status {
+        width: 31.333%;
+        padding-bottom: 40px;
+    }
+
+    .description__status h4 {
+        font-size: 2rem;
+        line-height: 29px;
+    }
+
+    .description__text{
+        font-size: 1.4rem;
+        line-height: 24px;
+    }
 }
 
 @media (min-width: 1024px) {
     .section1__container,
-    .faq__container {
+    .faq__container,
+    .faq__description {
         max-width: 940px;
     }
 
@@ -155,7 +216,8 @@
         font-size: 7rem;
     }
 
-    .question__answer {
+    .question__answer,
+    .description__text {
         font-size: 1.6rem;
         line-height: 28px;
     }
@@ -165,11 +227,17 @@
     .question__answer{
         padding: 0 24px 20px 70px;
     }
+
+    .description__status h4 {
+        font-size: 2.4rem;
+        line-height: 34px;
+    }
 }
 
 @media (min-width: 1440px) {
     .section1__container,
-    .faq__container {
+    .faq__container,
+    .faq__description {
         max-width: 1060px;
     }
 
