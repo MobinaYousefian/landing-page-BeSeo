@@ -113,17 +113,25 @@ header {
 
 /*//tablet//*/
 @media (min-width: 768px) {
+    header{
+        height: 120px;
+    }
+
     .header__menu {width: 40%;}
 
     .header__navbar {padding: 24px 32px;}
 
     .header__logo img {
-        width: 95px;
-        height: 35px;
+        width: 158px;
+        height: 60px;
+        /*for scrooling*/
+        /*width: 95px;*/
+        /*height: 35px;*/
     }
 
     .hamburger__open span {
         right: 32px;
+        top: 60px;
     }
 
     .hamburger__open span,
