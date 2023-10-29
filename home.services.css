@@ -1,5 +1,5 @@
 
-.container{
+.services{
     width: 100%;
     height: 100%;
     max-width: 2560px;
@@ -12,7 +12,7 @@
     justify-content: center;
     align-items: center;
 }
-.container__section h6{
+.services__section h6{
     padding: 2px 15px;
     border-radius: 15px;
     color: var(--color-yellow-main);
@@ -23,7 +23,7 @@
     text-align: center;
     margin-bottom: 32px;
 }
-.container__header h2{
+.services__header h2{
     max-width: 768px;
     padding: 0 10%;
     line-height: 32px;
@@ -33,7 +33,7 @@
     color: var(--color-purple-dark-title);
     margin-bottom: 88px;
 }
-.container__cards{
+.services__cards{
    flex-wrap: wrap;
     padding: 0 1%;
 }
@@ -73,13 +73,13 @@
     margin-bottom: 28px;
     margin-left: 10%;
 }
-.container__button{
+.services__button{
     display: flex;
     align-items: center;
     margin-top: 56px;
     cursor: pointer;
 }
-.container__button button{
+.services__button button{
     padding: 14px 35px;
     font-size: 2rem;
     border-radius: 50px;
@@ -91,21 +91,21 @@
     background-color: var(--color-purple-main);
     transition: 0.5s ease;
 }
-.container__button button:hover{
+.services__button button:hover{
     opacity: 0.8;
     background-color: var(--color-purple-dark-hover);
 }
 
 @media (min-width: 768px) {
-    .container__header{
+    .services__header{
         width: 100%;
     }
-    .container__header h2{
+    .services__header h2{
         max-width: 100%;
         font-size: 4.6rem;
         line-height: 46px;
     }
-    .container__cards{
+    .services__cards{
         max-width: 702px;
         display: flex;
         flex-direction: row;
@@ -133,14 +133,14 @@
 }
 
 @media (min-width: 1024px) {
-    .container__section h6{
+    .services__section h6{
         font-size: 1.4rem;
     }
-    .container__header h2{
+    .services__header h2{
         font-size: 5.4rem;
     }
-    .container__cards{
-        max-width: 940px
+    .services__cards{
+        max-width: 940px;
     }
     .card h4{
         font-size: 2.4rem;
@@ -153,7 +153,7 @@
 }
 
 @media (min-width: 1440px) {
-    .container__cards{
+    .services__cards{
         max-width: 1060px;
     }
 

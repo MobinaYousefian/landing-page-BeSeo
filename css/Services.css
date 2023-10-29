@@ -1,0 +1,440 @@
+
+.Services{
+    width: 100%;
+    height: auto;
+    max-width: 2560px;
+    padding: 180px 33px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1{
+    width: 100%;
+    background-image: url("images/seo3-sectionbg8.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.Services__section1{
+    width: 100%;
+}
+.Services__section1--section{
+    padding-right: 5%;
+}
+.Services__section1--section h6{
+    padding: 2px 15px;
+    border-radius: 15px;
+    color: var(--color-yellow-main);
+    font-size: 1.3rem;
+    line-height: 150%;
+    font-weight: 700;
+    background-color: var( --color-yellow-light-background);
+    text-align: center;
+    margin-bottom: 32px;
+}
+.Services__section1--header{
+    max-width: 470px;
+    padding-right: 5%;
+}
+.Services__section1--header h1{
+    font-size: 4.2rem;
+    line-height: 42px;
+    font-weight: 700;
+    color: var(--color-purple-dark-title);
+    margin-bottom: 36px;
+}
+.Services__section1--image img{
+    width: 100%;
+    height: auto;
+    max-width: 480px;
+    background-position: center;
+    background-size: cover;
+}
+.Services__section2 {
+    max-width: 480px;
+    padding-top: 80px;
+}
+.Services__section2 h2{
+    font-size: 3.2rem;
+    line-height: 32px;
+    font-weight: 700;
+    color: var(--color-purple-dark-title);
+    margin-bottom: 42px;
+}
+.Services__section2 p{
+    font-size: 1.3rem;
+    line-height: 150%;
+    font-weight: 400;
+}
+.Services__section2--button{
+    display: flex;
+    justify-content: right;
+    margin-top: 56px;
+    cursor: pointer;
+}
+.Services__section2--button button{
+    padding: 14px 35px;
+    font-size: 2rem;
+    border-radius: 50px;
+    border: 0 ;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    color: var(--color-text-white-main);
+    background-color: var(--color-purple-main);
+    transition: 0.5s ease;
+}
+.Services__section2--button button:hover{
+    opacity: 0.8;
+    background-color: var(--color-purple-dark-hover);
+}
+
+.Services__cards{
+    width: 100%;
+    background-image: url("images/seo3-sectionbg3 - Copy.png");
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 1%;
+}
+.card {
+    width: 100%;
+    max-width: 470px;
+    padding: 50px 40px 25px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(55, 43, 125, 0.1) 0 10px 30px;
+    --darkreader-inline-bgcolor: #181a1b;
+    --darkreader-inline-boxshadow: rgba(44, 34, 100, 0.1) 0px 10px 30px;
+    margin-bottom: 20px;
+}
+.card__image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card__image img{
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 32px;
+}
+.card h4{
+    font-size: 1.8rem;
+    color: var(--color-purple-dark-title);
+    margin-bottom: 15px;
+    margin-left: 10%;
+}
+.card p{
+    font-size: 1.3rem;
+    line-height: 150%;
+    color: var(--color-text-black-main);
+    margin-bottom: 28px;
+    margin-left: 10%;
+}
+
+.ourwork {
+    padding: 110px 33px 40px 33px;
+    background: url("../images/seo3-sectionbg4.png") no-repeat center;
+}
+
+.ourwork__container {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.ourwork__text {
+    display: flex;
+    flex-direction: column;
+    padding-right: 7%;
+}
+
+.ourwork__badge {
+    background-color: var(--color-yellow-light-background);
+    color: var(--color-yellow-main);
+    border-radius: 15px;
+    width: 104px;
+    text-align: center;
+    padding: 2px 15px;
+    margin-bottom: 30px;
+}
+
+.ourwork__badge h6 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.ourwork__title {
+    color: var(--color-purple-dark-title);
+    margin-bottom: 30px;
+    font-size: 3.2rem;
+    line-height: 32px;
+}
+
+.ourwork__description {
+    font-size: 1.3rem;
+    line-height: 19px;
+    margin-bottom: 35px;
+    color: var(--color-text-black-main);
+}
+
+.ourwork__benefits{
+    margin-bottom: 20px;
+}
+
+.benefits__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ourwork__benefits h5 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-purple-dark-title);
+    padding: 0 16px 0 20px;
+}
+
+.ourwork__benefits img {
+    width: 58px;
+    height: 58px;
+}
+
+.btn__container {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background-color: var(--color-purple-main);
+    color: var(--color-text-white-main);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 35px;
+    font-size: 1.3rem;
+    line-height: 150%;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ourwork__img,
+.ourwork__img img {
+    width: 100%;
+}
+
+@media (min-width: 425px) {
+    .ourwork__title{
+        font-size: 4.1rem;
+        line-height: 41px;
+    }
+}
+
+@media (min-width: 768px) {
+    .Services{
+        padding-top: 120px;
+    }
+    .Services__section1{
+        width: 98%;
+        max-width: 688px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Services__section1--section h6{
+        width: 100px;
+    }
+    .Services__section1--header{
+        max-width: 312px;
+    }
+    .Services__section1--header h1{
+        font-size: 6rem;
+        line-height: 60px;
+    }
+    .Services__section1--image{
+        width: 50%;
+
+    }
+    .Services__section2{
+        width: 100%;
+        max-width: 708px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .Services__section2 h2{
+        font-size: 4.6rem;
+    }
+    .Services__section2 p{
+        width: 462px;
+        font-size: 1.4rem;
+    }
+    .Services__cards{
+        max-width: 702px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .card{
+        width: 49%;
+        flex-direction: row;
+    }
+    .card__image{
+        align-items: start;
+    }
+    .card h4{
+        padding-right:3px ;
+        font-size: 2rem;
+        line-height: 29px;
+    }
+    .card p{
+        padding-right: 5px;
+        font-size: 1.4rem;
+        word-spacing: 1px;
+        line-height: 170%;
+    }
+
+    .ourwork {
+        padding: 110px 0 40px 0;
+    }
+
+    .ourwork__container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 705px;
+    }
+
+    .ourwork__text {
+        width: 50%;
+    }
+
+    .ourwork__img {
+        width: 50%
+    }
+
+    .ourwork__title{
+        font-size: 4.6rem;
+        line-height: 46px;
+    }
+
+    .ourwork__description {
+        font-size: 1.4rem;
+        line-height: 24px;
+    }
+
+    .ourwork__benefits {
+        margin-bottom: 30px;
+    }
+
+    .ourwork__benefits h5 {
+        font-size: 1.5rem;
+        line-height: 24px;
+    }
+
+    .btn__container {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .Services__section1{
+        max-width: 1000px;
+    }
+    .Services__section1--section h6{
+        font-size: 1.4rem;
+    }
+    .Services__section1--header{
+        max-width: 450px;
+    }
+    .Services__section1--header h1{
+        font-size: 7rem;
+        line-height: 70px;
+    }
+
+    .Services__section2{
+        max-width: 940px;
+    }
+    .Services__section2 h2{
+        font-size: 5.4rem;
+        margin-bottom: 60px;
+    }
+    .Services__section2 p{
+        width: 608px;
+        font-size: 1.6rem;
+    }
+
+    .Services__cards{
+        max-width: 940px;
+    }
+    .card h4{
+        font-size: 2.4rem;
+        padding-right: 0;
+    }
+    .card p{
+        font-size: 1.6rem;
+        padding-right: 0;
+    }
+
+    .ourwork__title{
+        font-size: 5.4rem;
+        line-height: 54px;
+    }
+
+    .ourwork__container{
+        max-width: 940px;
+    }
+
+    .ourwork__description,
+    .btn {
+        font-size: 1.6rem;
+        line-height: 28px;
+    }
+
+    .ourwork__benefits h5 {
+        font-size: 1.8rem;
+        line-height: 28px;
+    }
+
+    .ourwork__benefits img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .Services__section1{
+        max-width: 1060px;
+    }
+    .Services__section1--header{
+        max-width: 480px;
+    }
+    .Services__section2{
+        max-width: 1060px;
+    }
+    .Services__cards{
+       max-width: 1060px;
+    }
+    .card{
+        width: 80%;
+    }
+    .ourwork__container{
+        max-width: 1060px;
+    }
+
+}
+
+
+
