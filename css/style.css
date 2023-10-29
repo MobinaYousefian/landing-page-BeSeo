@@ -92,19 +92,19 @@
 }
 
 /*our client*/
-.Ourclients {
+.ourclients {
     width: 100%;
     text-align: center;
     padding: 110px 33px 0 33px;
     background: url("../images/seo3-sectionbg5.png") no-repeat center;
 }
 
-.Ourclients__container {
+.ourclients__container {
     max-width: 480px;
     margin: 0 auto;
 }
 
-.Ourclients h2 {
+.ourclients h2 {
     color: var(--color-purple-dark-title);
     font-size: 3.2rem;
     line-height: 32px;
@@ -112,7 +112,7 @@
     margin-bottom: 45px;
 }
 
-.Ourclients__logos {
+.ourclients__logos {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +120,7 @@
     margin-bottom: 20px;
 }
 
-.Ourclients__logos li {
+.ourclients__logos li {
     width: 40%;
     background-color: rgba(0, 0, 0, .01);
     list-style: none;
@@ -128,14 +128,14 @@
     padding: 10px 15px;
 }
 
-.Ourclients__logos img {
+.ourclients__logos img {
     min-width: 76px;
     width: 100%;
 }
 
 @media (min-width: 425px) {
     .ourwork__title,
-    .Ourclients h2 {
+    .ourclients h2 {
         font-size: 4.1rem;
         line-height: 41px;
     }
@@ -163,7 +163,7 @@
     }
 
     .ourwork__title,
-    .Ourclients h2 {
+    .ourclients h2 {
         font-size: 4.6rem;
         line-height: 46px;
     }
@@ -186,36 +186,36 @@
         margin-bottom: 40px;
     }
 
-    .Ourclients {
+    .ourclients {
         padding: 110px 0 0 0;
     }
 
-    .Ourclients h2 {
+    .ourclients h2 {
         margin-bottom: 65px;
     }
 
-    .Ourclients__container {
+    .ourclients__container {
         max-width: 708px;
     }
 
-    .Ourclients__logos {
+    .ourclients__logos {
         flex-wrap: unset;
     }
 
-    .Ourclients__logos img {
+    .ourclients__logos img {
         min-width: 88px;
     }
 }
 
 @media (min-width: 1024px) {
     .ourwork__title,
-    .Ourclients h2 {
+    .ourclients h2 {
         font-size: 5.4rem;
         line-height: 54px;
     }
 
     .ourwork__container,
-    .Ourclients__container {
+    .ourclients__container {
         max-width: 940px;
     }
 
@@ -235,14 +235,20 @@
         height: 60px;
     }
 
-    .Ourclients__logos img {
+    .ourclients__logos img {
         min-width: 134px;
     }
 }
 
 @media (min-width: 1440px) {
+    .ourwork,
+    .ourclients {
+        background-size: cover;
+        background-position: center top;
+    }
+
     .ourwork__container,
-    .Ourclients__container {
+    .ourclients__container {
         max-width: 1060px;
     }
 }

@@ -245,3 +245,11 @@
         padding: 0 26px 20px 70px;
     }
 }
+
+@media (min-width: 1921px){
+    .section1,
+    .section2 {
+        background-size: contain;
+        background-position: center top;
+    }
+}
