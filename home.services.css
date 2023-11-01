@@ -44,6 +44,7 @@
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+    background-color: white;
     box-shadow: rgba(55, 43, 125, 0.1) 0 10px 30px;
     --darkreader-inline-bgcolor: #181a1b;
     --darkreader-inline-boxshadow: rgba(44, 34, 100, 0.1) 0px 10px 30px;

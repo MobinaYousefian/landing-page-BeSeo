@@ -3,22 +3,24 @@
     width: 100%;
     height: auto;
     max-width: 2560px;
-    padding: 180px 33px 0;
+    padding: 120px 33px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.section1{
+.Section1{
     width: 100%;
-    background-image: url("images/seo3-sectionbg8.png");
-    background-position: center;
+    height: 100%;
+    background-image: url("../images/seo3-sectionbg8.png");
+    background-position: center bottom;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 .Services__section1{
     width: 100%;
@@ -27,6 +29,7 @@
     padding-right: 5%;
 }
 .Services__section1--section h6{
+    max-width: 98px;
     padding: 2px 15px;
     border-radius: 15px;
     color: var(--color-yellow-main);
@@ -94,49 +97,61 @@
     background-color: var(--color-purple-dark-hover);
 }
 
-.Services__cards{
+.Services__section3{
     width: 100%;
-    background-image: url("images/seo3-sectionbg3 - Copy.png");
+    height: auto;
+    box-sizing: content-box;
+    padding: 0 33px;
+    background-image: url("../images/seo3-sectionbg3 - Copy.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Services__Cards{
+    width: 100%;
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 1%;
 }
-.card {
+.Card {
     width: 100%;
     max-width: 470px;
     padding: 50px 40px 25px;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
+    background-color: white;
     box-shadow: rgba(55, 43, 125, 0.1) 0 10px 30px;
     --darkreader-inline-bgcolor: #181a1b;
     --darkreader-inline-boxshadow: rgba(44, 34, 100, 0.1) 0px 10px 30px;
     margin-bottom: 20px;
 }
-.card__image{
+.Card__image{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card__image img{
+.Card__image img{
     height: auto;
     max-width: 100%;
     margin-bottom: 32px;
 }
-.card h4{
+.Card h4{
     font-size: 1.8rem;
     color: var(--color-purple-dark-title);
     margin-bottom: 15px;
     margin-left: 10%;
 }
-.card p{
+.Card p{
     font-size: 1.3rem;
     line-height: 150%;
     color: var(--color-text-black-main);
-    margin-bottom: 28px;
+    margin-bottom: 15px;
     margin-left: 10%;
 }
 
@@ -242,7 +257,7 @@
 
 @media (min-width: 768px) {
     .Services{
-        padding-top: 120px;
+        padding-top: 20px;
     }
     .Services__section1{
         width: 98%;
@@ -280,25 +295,25 @@
         width: 462px;
         font-size: 1.4rem;
     }
-    .Services__cards{
+    .Services__Cards{
         max-width: 702px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .card{
+    .Card{
         width: 49%;
         flex-direction: row;
     }
-    .card__image{
+    .Card__image{
         align-items: start;
     }
-    .card h4{
+    .Card h4{
         padding-right:3px ;
         font-size: 2rem;
         line-height: 29px;
     }
-    .card p{
+    .Card p{
         padding-right: 5px;
         font-size: 1.4rem;
         word-spacing: 1px;
@@ -376,16 +391,18 @@
         font-size: 1.6rem;
     }
 
-    .Services__cards{
+    .Services__Cards{
         max-width: 940px;
     }
-    .card h4{
+    .Card h4{
         font-size: 2.4rem;
-        padding-right: 0;
+        padding-right: 20px;
+        margin-right: -40px;
     }
-    .card p{
+    .Card p{
         font-size: 1.6rem;
-        padding-right: 0;
+        padding-right: 20px;
+        margin-right: -40px;
     }
 
     .ourwork__title{
@@ -415,6 +432,13 @@
 }
 
 @media (min-width: 1440px) {
+    .Services{
+        padding: 0;
+    }
+    .Section1{
+        width: 99%;
+        padding: 20px;
+    }
     .Services__section1{
         max-width: 1060px;
     }
@@ -424,11 +448,12 @@
     .Services__section2{
         max-width: 1060px;
     }
-    .Services__cards{
+    .Services__Cards{
        max-width: 1060px;
+        justify-content: normal;
     }
-    .card{
-        width: 80%;
+    .Card{
+        margin-right: 20px;
     }
     .ourwork__container{
         max-width: 1060px;
