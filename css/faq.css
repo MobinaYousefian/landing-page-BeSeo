@@ -59,7 +59,17 @@
 }
 
 .question {
+    color: var(--color-text-black-main);
+    font-size: 1.3rem;
+    line-height: 19px;
+    height: auto;
     border-left: 1px solid rgba(0,0,0,.08);
+    transition: border-left-width 0.3s ease;
+}
+
+.question .active {
+    color: var(--color-yellow-main);
+    border-left: 2px solid var(--color-yellow-main);
 }
 
 .question__title {
@@ -69,14 +79,6 @@
     z-index: 2;
     display: flex;
     justify-content: flex-start;
-}
-
-.num,
-.question__question,
-.question__answer {
-    color: var(--color-text-black-main);
-    font-size: 1.3rem;
-    line-height: 19px;
 }
 
 .num {
@@ -95,8 +97,16 @@
     top: 20px;
 }
 
+.--remove {
+    display: none;
+}
+
 .question__answer{
+    background-color: #8f96a3;
     padding: 0 20px 20px 70px;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
 }
 
 .faq__description {
