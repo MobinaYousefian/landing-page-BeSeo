@@ -96,11 +96,12 @@
                 <p class="form__title">Contact form</p>
                 <div class="form__input--text">
                     <input type="text" name="name" id="name" class="input" placeholder="Your name" >
-                    <input type="email" name="e-mail" id="e-mail" class="input" placeholder="Your e-mail">
+                    <input type="text" name="e-mail" id="email" class="input" placeholder="Your e-mail">
                 </div>
                 <input type="text" name="subject" id="subject" class="input" placeholder="Subject">
                 <textarea name="" id="message" cols="20" rows="10" placeholder="Message" class="input"></textarea>
-                <button class="btn" >Send a message</button>
+                <p class="error-message">Please provide your name</p>
+                <button class="btn send" type="submit" >Send a message</button>
             </form>
         </div>
     </div>
@@ -168,7 +169,8 @@
         </div>
     </footer>
 
-    <script src="javascript/header.js"></script>
+    <!-- <script src="javascript/header.js"></script> -->
+    <script src="js/contact.js"></script>
 </body>
 </html>
 
