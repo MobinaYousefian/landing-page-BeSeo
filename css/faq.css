@@ -101,13 +101,39 @@
     display: none;
 }
 
+
 .question__answer{
     background-color: #8f96a3;
     padding: 0 20px 20px 70px;
-    max-height: 0;
+    /* ranjbar edit */
+    /* max-height: 0; */
     transition: max-height 0.3s ease;
     overflow: hidden;
+    /* ranjbar edit */
+    display: none;
 }
+
+
+/* ranjbar edit */
+.show-question{
+    display: block;
+}
+
+.question .yellow {
+    color: var(--color-yellow-main);
+}
+
+.border{
+    border-left: 2px solid var(--color-yellow-main);
+}
+.show-remove{
+    display: block;
+}
+.hide-add{
+    display: none;
+}
+
+
 
 .faq__description {
     margin: 0 auto;
