@@ -72,6 +72,9 @@
     border-left: 2px solid var(--color-yellow-main);
 }
 
+
+
+
 .question__title {
     padding: 20px 40px 20px 70px;
     position: relative;
@@ -100,7 +103,6 @@
 .--remove {
     display: none;
 }
-
 
 .question__answer{
     background-color: #8f96a3;
@@ -132,8 +134,6 @@
 .hide-add{
     display: none;
 }
-
-
 
 .faq__description {
     margin: 0 auto;

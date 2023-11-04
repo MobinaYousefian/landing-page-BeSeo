@@ -1,5 +1,8 @@
 // let questions = document.querySelectorAll(".question__title");
 
+
+
+
 // for (let question of questions) {
 //     question.addEventListener("click", (event) => {
 //         event.target.classList.toggle("active");
@@ -25,9 +28,15 @@ let questionRemove= document.querySelectorAll(".--remove");
 questionTitle.forEach((q)=>{
     q.addEventListener('click', (e)=>{
         q.classList.toggle("yellow");
+        console.log(answerText)
+        console.log(q.id)
+        console.log(answerText)
+        console.log(q.parentElement)
         answerText[q.id-1].classList.toggle("show-question");
         questions[q.id-1].classList.toggle("border");
         questionAdd[q.id-1].classList.toggle("hide-add");
         questionRemove[q.id-1].classList.toggle("show-remove");
+
+
     })
 })
