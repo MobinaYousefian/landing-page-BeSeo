@@ -67,14 +67,6 @@
     transition: border-left-width 0.3s ease;
 }
 
-.question .active {
-    color: var(--color-yellow-main);
-    border-left: 2px solid var(--color-yellow-main);
-}
-
-
-
-
 .question__title {
     padding: 20px 40px 20px 70px;
     position: relative;
@@ -105,27 +97,25 @@
 }
 
 .question__answer{
-    background-color: #8f96a3;
     padding: 0 20px 20px 70px;
-    /* ranjbar edit */
-    /* max-height: 0; */
-    transition: max-height 0.3s ease;
-    overflow: hidden;
-    /* ranjbar edit */
+    transition: all 0.3s ease;
     display: none;
 }
-
 
 /* ranjbar edit */
 .show-question{
     display: block;
+    transition: all 0.2s ease;
 }
 
 .question .yellow {
     color: var(--color-yellow-main);
+    transition: all 0.2s ease;
+
 }
 
 .border{
+    transition: all 0.2s ease;
     border-left: 2px solid var(--color-yellow-main);
 }
 .show-remove{
