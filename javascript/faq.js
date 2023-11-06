@@ -28,10 +28,6 @@ let questionRemove= document.querySelectorAll(".--remove");
 questionTitle.forEach((q)=>{
     q.addEventListener('click', (e)=>{
         q.classList.toggle("yellow");
-        console.log(answerText)
-        console.log(q.id)
-        console.log(answerText)
-        console.log(q.parentElement)
         answerText[q.id-1].classList.toggle("show-question");
         questions[q.id-1].classList.toggle("border");
         questionAdd[q.id-1].classList.toggle("hide-add");
