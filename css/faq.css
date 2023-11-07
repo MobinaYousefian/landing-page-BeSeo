@@ -97,7 +97,6 @@
 }
 
 .question__answer{
-    background-color: papayawhip;
     padding: 0 20px 20px 70px;
     transition: opacity 0.3s ease;
     /*display: none;*/

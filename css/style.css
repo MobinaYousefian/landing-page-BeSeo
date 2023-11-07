@@ -84,6 +84,12 @@
     font-weight: 400;
     text-align: center;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.btn:hover {
+    background-color: var(--color-purple-hover);
 }
 
 .ourwork__img,

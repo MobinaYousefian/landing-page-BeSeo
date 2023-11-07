@@ -71,6 +71,7 @@
     line-height: 150%;
     font-weight: 400;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
 
 .--signup {
@@ -79,6 +80,9 @@
     line-height: 19px;
 }
 
+.--signup:hover {
+    background-color: #e89d13;
+}
 
 footer {
     width: 100%;

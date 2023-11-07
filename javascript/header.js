@@ -22,7 +22,7 @@ let headerLogo = document.querySelector('.header__logo')
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
         header.classList.add('header-onscroll');
         headerLogo.classList.add('logo-onscroll');
         if (x.matches) { // If media query matches
