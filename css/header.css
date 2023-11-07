@@ -3,10 +3,10 @@ a {
     color: unset;
 }
 
-#main {
-    transition: opacity 0.3s ease;
-    opacity: 1;
-}
+/*#main {*/
+/*    transition: opacity 0.3s ease-in-out;*/
+/*    opacity: 1;*/
+/*}*/
 
 .header {
     width: 100%;
@@ -17,12 +17,7 @@ a {
 .header-onscroll {
     position: fixed;
     height: 60px;
-    opacity: 0.8;
-}
-/*//logo img changes on scroll*/
-.logo-onscroll {
-    width: 95px;
-    height: 35px;
+    transition: all 0.5s ease-in-out;
 }
 
 .header__navbar {
@@ -126,6 +121,12 @@ a {
         height: 120px;
     }
 
+    /*//header fixed and changes on scroll*/
+    .header-onscroll {
+        position: fixed;
+        height: 60px;
+    }
+
     .header__menu {width: 50%;}
 
     .header__navbar {padding: 24px 32px;}
@@ -133,6 +134,12 @@ a {
     .header__logo {
         width: 158px;
         height: 60px;
+    }
+
+    /*//logo img changes on scroll*/
+    .logo-onscroll {
+        width: 95px;
+        height: 35px;
     }
 
     .hamburger__open span {

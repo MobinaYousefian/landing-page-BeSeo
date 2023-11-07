@@ -1,25 +1,35 @@
 // to open the mobile menu
 function openNav() {
     document.getElementById("mobileMenu").style.right = "0";
-    document.getElementById("main").style.opacity = "0.4";
+    document.getElementById("header").style.opacity = "1";
+    // document.getElementById("main").style.opacity = "0.4";
 }
 
 //to close the mobile menu
 function closeNav() {
     document.getElementById("mobileMenu").style.right = "-100%";
-    document.getElementById("main").style.opacity = "1";
+    document.getElementById("header").style.opacity = "0.97";
+    // document.getElementById("main").style.opacity = "1";
 }
 
+//matching media query for transition header on scroll
+let x = window.matchMedia("(min-width: 768px)")
+
 //transition header on scroll
-let header = document.querySelectorAll('.header');
-let headerLogo = document.querySelectorAll('.header__logo')
+let header = document.querySelector('.header');
+let headerLogo = document.querySelector('.header__logo')
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         header.classList.add('header-onscroll');
         headerLogo.classList.add('logo-onscroll');
+        if (x.matches) { // If media query matches
+            document.getElementById("header").style.opacity = "0.97";
+        } else {
+            document.getElementById("header").style.opacity = "1";
+        }
     } else {
         header.classList.remove('header-onscroll');
         headerLogo.classList.remove('logo-onscroll');
