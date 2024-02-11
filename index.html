@@ -3,60 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/home.welcome.css">
+    <link rel="stylesheet" href="css/home.services.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0"/>
+    <script src="https://kit.fontawesome.com/6aaf78ad8b.js" crossorigin="anonymous"></script>
     <title>BeSeo</title>
 </head>
 <body>
 
-    <header id="header">
-    <nav class="header__navbar">
-        <div class="navbar__container">
-            <div class="header__logo">
-                <a href="#"><img src="images/seo31.png" alt="seo31"></a>
+    <header id="header" class="header">
+        <nav class="header__navbar">
+            <div class="navbar__container">
+                <div>
+                    <a href="#"><img class="header__logo" src="images/seo31.png" alt="seo31"></a>
+                </div>
+                <a class="hamburger__open" onclick="openNav()"><span class="material-symbols-outlined">menu</span></a>
+                <ul id="mobileMenu" class="header__menu">
+                    <a class="hamburger__close" onclick="closeNav()"><span
+                            class="material-symbols-outlined">close</span></a>
+                    <a href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=2fWReXx5ixyNTln3ItVONx-YUkFWotW-mzIkQA0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius"
+                       target="_blank">
+                        <div class="btn__buy --buy-in">Buy Now ></div>
+                    </a>
+                    <li class="--first-menu"><a onclick="activeMenuHandler('home')" href="/index.html" id="home">Home</a></li>
+                    <li><a onclick="activeMenuHandler('aboutUs')" href="/about.html" id="about us">About us</a></li>
+                    <li><a onclick="activeMenuHandler('services')" href="/Services.html" id="services">Services</a></li>
+                    <li><a onclick="activeMenuHandler('faq')" href="/faq.html" id="faq">FAQ</a></li>
+                    <li><a onclick="activeMenuHandler('contactUs')" href="/contact.html" id="contact us">Contact us</a></li>
+                </ul>
             </div>
-            <input type="checkbox" id="check">
-            <label for="check" class="hamburger__open"><span class="material-symbols-outlined">menu</span></label>
-            <ul class="header__menu">
-                <label for="check" class="hamburger__close"><span
-                        class="material-symbols-outlined">close</span></label>
-                <a href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=2fWReXx5ixyNTln3ItVONx-YUkFWotW-mzIkQA0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius"
-                   target="_blank">
-                    <div class="btn__buy --buy-in">Buy Now ></div>
-                </a>
-                <li class="--first-menu"><a onclick="activeMenuHandler('home')" href="#" id="home">Home</a></li>
-                <li><a onclick="activeMenuHandler('aboutUs')" href="#" id="about us">About us</a></li>
-                <li><a onclick="activeMenuHandler('services')" href="#" id="services">Services</a></li>
-                <li><a onclick="activeMenuHandler('faq')" href="#" id="faq">FAQ</a></li>
-                <li><a onclick="activeMenuHandler('contactUs')" href="#" id="contact us">Contact us</a></li>
-            </ul>
+            <a href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=2fWReXx5ixyNTln3ItVONx-YUkFWotW-mzIkQA0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius"
+               target="_blank">
+                <div class="btn__buy --buy-out">Buy Now ></div>
+            </a>
+        </nav>
+    </header>
+
+    <div class="welcome__container">
+    <div class="welcome">
+
+        <div class="welcome__header">
+          <div class="welcome__header--section">
+              <p>WELCOME TO BESEO</p>
+          </div>
+          <div class="welcome__header--boldTitle">
+              <p>We can make your business visible</p>
+          </div>
+          <div class="welcome__header--bodyTitle">
+              <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper a dui, non felis. Maecenas malesuada elit lectus felis.</p>
+          </div>
+          <div class="welcome__header--button">
+              <a href="/about.html"><button type="button" class="header__button--dark"> <h5>Read more</h5> </button></a>
+              <a href="/contact.html"><button type="button" class="header__button--light"><h5>Contact us</h5></button></a>
+          </div>
         </div>
-        <a href="https://themeforest.net/item/betheme-responsive-multipurpose-wordpress-theme/7758048?ref=muffingroup&irgwc=1&clickid=2fWReXx5ixyNTln3ItVONx-YUkFWotW-mzIkQA0&iradid=275988&irpid=1289117&iradtype=ONLINE_TRACKING_LINK&irmptype=mediapartner&mp_value1=&utm_campaign=af_impact_radius_1289117&utm_medium=affiliate&utm_source=impact_radius"
-           target="_blank">
-            <div class="btn__buy --buy-out">Buy Now ></div>
-        </a>
-    </nav>
-</header>
-
-      <div class="container">
-
-    <div class="container__header">
-      <div class="container__header--section">
-          <p>WELCOME TO BESEO</p>
-      </div>
-      <div class="container__header--boldTitle">
-          <p>We can make your business visible</p>
-      </div>
-      <div class="container__header--bodyTitle">
-          <p>Lorem ipsum dolor sit amet enim. Etiam ullamcorper a dui, non felis. Maecenas malesuada elit lectus felis.</p>
-      </div>
-      <div class="container__header--button">
-          <a><button type="button" class="header__button--dark"> <h5>Read more</h5> </button></a>
-          <a><button type="button" class="header__button--light"><h5>Contact us</h5></button></a>
+    
       </div>
     </div>
-
-  </div>
 
     <div class="features">
         <div class="features__container">
@@ -93,33 +101,192 @@
                 <h2 class="section__title">About our agency</h2>
                 <p class="section__text">Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim. Duis fermentum faucibus est.</p>
                 <p class="section__text">Curabitur ut tortor a orci fermentum ultricies. Mauris maximus velit commodo, varius ligula vel, consequat est.</p>
+                <a href="about.html"></a>
                 <div class="btn">
-                    <a href="about.html">About us</a>
+                    About us
                 </div>
+            </a>
             </div>
             </div>
             
             <div class="banner-stats">
                 <div>
-                    <p class="banner-stats--number">850</p>
+                    <p class="banner-stats--number stats--number1"></p>
                     <p class="banner-stats--text">Fusce interdum</p>
                 </div>
                 <div>
-                    <p class="banner-stats--number">20</p>
+                    <p class="banner-stats--number stats--number2"></p>
                     <p class="banner-stats--text">Sed auctor</p>
                 </div>
                 <div>
-                    <p class="banner-stats--number">29</p>
+                    <p class="banner-stats--number stats--number3"></p>
                     <p class="banner-stats--text">Aliquam erat</p>
                 </div>
                 <div>
-                    <p class="banner-stats--number">1<span class="k">k</span></p>
+                    <p class="banner-stats--number stats--number4"><span class="stats--number44"></span><span class="k">k</span></p>
                     <p class="banner-stats--text">Maecenas non</p>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="services">
+        <div class="services__section">
+            <h6>SERVICES</h6>
+        </div>
+        <div class="services__header">
+            <h2>What we can do for you?</h2>
+        </div>
+        <div class="services__cards">
+            <div class="card">
+                <div class="card__image"><img src="images/seo3-services-icon1.png" alt="icon-services"></div>
+                <div>
+                    <h4>Design & Layout</h4>
+                    <p>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image"><img src="images/seo3-services-icon2.png" alt="icon-services"></div>
+                <div>
+                    <h4>Digital Marketing</h4>
+                    <p>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image"><img src="images/seo3-services-icon3.png" alt="icon-services"></div>
+                <div>
+                    <h4>Google Ads</h4>
+                    <p>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image"><img src="images/seo3-services-icon4.png" alt="icon-services"></div>
+                <div>
+                    <h4>Social Media Marketing</h4>
+                    <p>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image"><img src="images/seo3-services-icon5.png" alt="icon-services"></div>
+                <div>
+                    <h4>Marketing Analysist</h4>
+                    <p>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card__image"><img src="images/seo3-services-icon6.png" alt="icon-services"></div>
+                <div>
+                    <h4>Content Marketing</h4>
+                    <p>Sed ultrices nisl velit, eu ornare est ullamcorper a. Nunc quis nibh magna. Proin risus erat, fringilla vel purus sit amet, mattis porta enim.</p>
+                </div>
+            </div>
+        </div>
+        <div class="services__button">
+            <a  href="/Services.html"><button><h6>Read more</h6></button></a>
+        </div>
+    </div>
+
+    <main id="main">
+        <div class="ourwork">
+            <div class="ourwork__container">
+                <div class="ourwork__text">
+                    <div class="ourwork__badge"><h6>OUR WORK</h6></div>
+                    <h2 class="ourwork__title">Why customers loves us?</h2>
+                    <div class="ourwork__description">Ut ultricies imperdiet sodales. Aliquam fringilla aliquam ex sit amet
+                        elementum. Proin bibendum sollicitudin feugiat. Curabitur ut egestas justo, vitae molestie ante.
+                    </div>
+                    <div class="ourwork__benefits">
+                        <div class="benefits__container"><img src="images/seo3-home-icon4.png" alt="seo3-home-icon4"><h5>
+                            Vivamus in diam turpis</h5></div>
+                        <div class="benefits__container"><img src="images/seo3-home-icon5.png" alt="seo3-home-icon5"><h5>
+                            Curabitur ut egestas justo</h5></div>
+                    </div>
+                    <a href="/about.html">
+                        <div class="btn__container">
+                            <div class="btn">About us</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="ourwork__img"><img src="images/seo3-home-pic2.png" alt="seo3-home-pic2"></div>
+            </div>
+        </div>
     
+        <div class="ourclients">
+            <div class="ourclients__container">
+                <h2>Our clients</h2>
+                <ul class="ourclients__logos">
+                    <li><img src="images/seo3-client1.png" alt="seo3-client1"></li>
+                    <li><img src="images/seo3-client2.png" alt="seo3-client2"></li>
+                    <li><img src="images/seo3-client3.png" alt="seo3-client3"></li>
+                    <li><img src="images/seo3-client4.png" alt="seo3-client4"></li>
+                    <li><img src="images/seo3-client5.png" alt="seo3-client5"></li>
+                </ul>
+            </div>
+        </div>
     
+        <div class="newsletter">
+            <div class="newsletter__container">
+                <div class="section__heading"><h6>JOIN TO US</h6></div>
+                <h2 class="newsletter__title">Newsletter</h2>
+                <form class="newsletter__form">
+                    <input type="email" placeholder="Your e-mail">
+                </form>
+                <div class="btn__container">
+                    <input class="btn --signup" type="submit" value="Sign up">
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="contact__container">
+                <div class="footer__contact">
+                    <div class="footer__address">
+                        <div class="address__container">
+                            <span>Level 13, 2 Elizabeth St,</span>
+                            <span>Melbourne, Victoria 3000,</span>
+                            <span>Australia</span>
+                        </div>
+                    </div>
+                    <div class="footer__social">
+                        <div class="social__container">
+                    <span>
+                    Monday - Friday: 8am - 6pm
+                    </span>
+                            <div class="social__icon">
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-skype" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__number">
+                        <div class="number__container">
+                            <div class="number --number-top">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <h5>+61 (0) 383 766 284</h5>
+                            </div>
+                            <div class="number">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>
+                                <h5>noreply@envato.com</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <div class="copyright__container">
+                    <div class="scroll-top">
+                        <div><a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a></div>
+                    </div>
+                    <div class="copyright__text">
+                        © 2021 Betheme by <a href="https://muffingroup.com/" target="_blank">Muffin group</a> | All Rights
+                        Reserved | Powered by <a href="https://wordpress.org/" target="_blank">WordPress</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="js/header.js"></script>
+    <script src="js/about.js"></script>   
 </body>
 </html>
